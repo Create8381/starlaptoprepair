@@ -1,551 +1,597 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Laptop Repair | OMR Road, Chennai</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0f1f3d;
+    --blue: #1a4080;
+    --accent: #e8a020;
+    --light: #f5f7fa;
+    --white: #ffffff;
+    --text: #333;
+    --muted: #666;
+  }
 
-  <title>Star Computer Service | Laptop Repair Chennai | Computer Repair OMR & ECR</title>
-  <meta name="description" content="Star Computer Service provides fast laptop repair Chennai, computer repair OMR, and laptop service ECR Chennai. Sales, servicing, data recovery, printer repair, and chip-level repairs." />
-  <meta name="keywords" content="Laptop repair Chennai, Computer repair OMR, Laptop service ECR Chennai, CPU repair, printer repair Chennai, data recovery Chennai" />
-  <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0b5cff" />
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  <style>
-    :root {
-      --blue-1: #0b5cff;
-      --blue-2: #274bdb;
-      --blue-3: #142a7b;
-      --green: #1dbf73;
-      --green-hover: #17a863;
-      --text-dark: #1f2a44;
-      --text-muted: #5f6b85;
-      --white: #ffffff;
-      --bg-soft: #f4f7ff;
-      --radius: 14px;
-      --shadow: 0 12px 28px rgba(16, 42, 120, 0.12);
-    }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.7;
+  }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      color: var(--text-dark);
-      background: var(--white);
-    }
-    img { max-width: 100%; display: block; }
-    a { text-decoration: none; color: inherit; }
+  /* NAV */
+  nav {
+    background: var(--navy);
+    padding: 0 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 68px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  }
 
-    .container {
-      width: min(1140px, 92%);
-      margin: 0 auto;
-    }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
 
-    /* Header */
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(6px);
-      border-bottom: 1px solid #e8edff;
-    }
+  .logo-icon {
+    width: 38px; height: 38px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
 
-    .nav {
-      min-height: 72px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
+  .logo-text {
+    font-family: 'Playfair Display', serif;
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
 
-    .brand {
-      font-weight: 700;
-      font-size: 1.15rem;
-      color: #16307e;
-    }
+  .logo-text span { color: var(--accent); }
 
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      font-size: 0.95rem;
-      color: #32406b;
-    }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
 
-    .nav-links a:hover { color: var(--blue-1); }
+  nav ul a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    transition: color 0.2s;
+  }
 
-    .nav-cta {
-      background: var(--green);
-      color: var(--white);
-      font-weight: 700;
-      border-radius: 999px;
-      padding: 10px 16px;
-      box-shadow: var(--shadow);
-    }
-    .nav-cta:hover { background: var(--green-hover); }
+  nav ul a:hover { color: var(--accent); }
 
-    /* Hero */
-    .hero {
-      background: linear-gradient(135deg, var(--blue-1), var(--blue-2) 55%, var(--blue-3));
-      color: var(--white);
-      padding: 88px 0 72px;
-    }
+  .nav-cta {
+    background: var(--accent);
+    color: var(--navy) !important;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600 !important;
+  }
 
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 30px;
-      align-items: center;
-    }
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 60%, #2563a8 100%);
+    color: var(--white);
+    padding: 90px 6% 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
 
-    .hero h1 {
-      font-size: clamp(1.9rem, 4vw, 3rem);
-      line-height: 1.2;
-      margin-bottom: 12px;
-    }
+  .hero::before {
+    content: '';
+    position: absolute;
+    right: -100px; top: -100px;
+    width: 500px; height: 500px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
 
-    .hero p {
-      font-size: 1.05rem;
-      color: rgba(255, 255, 255, 0.93);
-      margin-bottom: 24px;
-    }
+  .hero::after {
+    content: '';
+    position: absolute;
+    right: 50px; bottom: -150px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: rgba(232,160,32,0.08);
+  }
 
-    .hero-btns {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(232,160,32,0.15);
+    border: 1px solid rgba(232,160,32,0.4);
+    color: var(--accent);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
 
-    .btn {
-      border-radius: 999px;
-      padding: 12px 20px;
-      font-weight: 700;
-      font-size: 0.95rem;
-      display: inline-block;
-      box-shadow: var(--shadow);
-      transition: 0.2s ease;
-    }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
 
-    .btn-green {
-      background: var(--green);
-      color: var(--white);
-    }
-    .btn-green:hover { background: var(--green-hover); transform: translateY(-1px); }
+  .hero h1 span { color: var(--accent); }
 
-    .btn-outline {
-      border: 1px solid rgba(255,255,255,0.65);
-      color: var(--white);
-      background: rgba(255,255,255,0.06);
-    }
-    .btn-outline:hover { background: rgba(255,255,255,0.15); }
+  .hero p {
+    color: rgba(255,255,255,0.75);
+    font-size: 1.05rem;
+    margin-bottom: 36px;
+    max-width: 460px;
+  }
 
-    .hero-card {
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.22);
-      border-radius: var(--radius);
-      padding: 20px;
-    }
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
 
-    .hero-card h3 { margin-bottom: 10px; font-size: 1.05rem; }
-    .hero-list { list-style: none; display: grid; gap: 8px; font-size: 0.95rem; }
+  .btn-primary {
+    background: var(--accent);
+    color: var(--navy);
+    padding: 13px 28px;
+    border-radius: 7px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 15px rgba(232,160,32,0.4);
+  }
 
-    section { padding: 70px 0; }
-    .section-title {
-      text-align: center;
-      margin-bottom: 28px;
-    }
-    .section-title h2 {
-      font-size: clamp(1.5rem, 3vw, 2.2rem);
-      color: #17337f;
-      margin-bottom: 8px;
-    }
-    .section-title p { color: var(--text-muted); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,160,32,0.5); }
 
-    /* Services */
-    .services { background: var(--bg-soft); }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 16px;
-    }
+  .btn-outline {
+    border: 1.5px solid rgba(255,255,255,0.4);
+    color: var(--white);
+    padding: 13px 28px;
+    border-radius: 7px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(255,255,255,0.2);
+    touch-action: manipulation;
+  }
 
-    .service-card {
-      background: var(--white);
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: var(--shadow);
-      border: 1px solid #e8edff;
-    }
+  .btn-outline:hover { background: rgba(255,255,255,0.08); }
 
-    .service-icon {
-      width: 44px;
-      height: 44px;
-      border-radius: 12px;
-      display: grid;
-      place-items: center;
-      font-size: 1.3rem;
-      background: linear-gradient(135deg, #e9f0ff, #d9e5ff);
-      margin-bottom: 10px;
-    }
+  .hero-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 36px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
+  }
 
-    .service-card h3 {
-      font-size: 1rem;
-      margin-bottom: 6px;
-      color: #1c336f;
-    }
+  .hero-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
 
-    .service-card p {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-    }
+  .stat-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
 
-    /* Gallery Slider */
-    .gallery-wrap {
-      position: relative;
-    }
+  .stat { text-align: center; padding: 16px; background: rgba(255,255,255,0.05); border-radius: 10px; }
+  .stat .num { font-size: 2rem; font-weight: 700; color: var(--accent); display: block; }
+  .stat .label { font-size: 0.78rem; color: rgba(255,255,255,0.6); }
 
-    .gallery-track {
-      display: flex;
-      gap: 14px;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding: 6px 36px;
-      scrollbar-width: none;
-    }
-    .gallery-track::-webkit-scrollbar { display: none; }
+  .contact-pill {
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 0.9rem;
+    transition: background 0.2s;
+    margin-bottom: 10px;
+  }
+  .contact-pill:hover { background: rgba(255,255,255,0.15); }
+  .contact-pill .icon { font-size: 1.2rem; }
 
-    .gallery-item {
-      min-width: 280px;
-      max-width: 280px;
-      border-radius: var(--radius);
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      border: 1px solid #e5ebff;
-      background: #fff;
-    }
-    .gallery-item img { height: 180px; object-fit: cover; width: 100%; }
+  /* SERVICES */
+  .services { padding: 80px 6%; background: var(--light); }
 
-    .gallery-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: none;
-      background: #ffffff;
-      box-shadow: var(--shadow);
-      cursor: pointer;
-      font-size: 1.1rem;
-      color: #1c357d;
-      z-index: 3;
-    }
-    .gallery-btn.left { left: 0; }
-    .gallery-btn.right { right: 0; }
+  .section-header { text-align: center; margin-bottom: 52px; }
+  .section-tag {
+    display: inline-block;
+    background: rgba(26,64,128,0.08);
+    color: var(--blue);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
 
-    /* Testimonials */
-    .testimonials { background: var(--bg-soft); }
-    .testimonial-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 16px;
-    }
+  .section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
 
-    .testimonial-card {
-      background: #fff;
-      border-radius: var(--radius);
-      padding: 18px;
-      border: 1px solid #e8edff;
-      box-shadow: var(--shadow);
-    }
-    .stars { color: #ffb400; margin-bottom: 8px; font-size: 1rem; }
-    .testimonial-card p {
-      color: #445070;
-      font-size: 0.94rem;
-      margin-bottom: 10px;
-    }
-    .testimonial-name {
-      font-weight: 700;
-      color: #1a3375;
-      font-size: 0.92rem;
-    }
+  .section-header p { color: var(--muted); max-width: 500px; margin: 0 auto; }
 
-    /* Locations */
-    .location-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-bottom: 20px;
-    }
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
 
-    .location-card {
-      background: #fff;
-      border: 1px solid #e8edff;
-      border-radius: var(--radius);
-      padding: 18px;
-      box-shadow: var(--shadow);
-    }
+  .service-card {
+    background: var(--white);
+    border-radius: 14px;
+    padding: 32px 28px;
+    border: 1px solid #e8edf3;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
 
-    .location-card h3 {
-      color: #183680;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
-    .location-card p { color: #4d5878; margin-bottom: 6px; }
-    .location-card a {
-      color: #0f54f7;
-      font-weight: 700;
-    }
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--accent));
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
 
-    .map-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(15,31,61,0.12);
+    border-color: transparent;
+  }
 
-    .map-frame {
-      width: 100%;
-      min-height: 250px;
-      border: 0;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
+  .service-card:hover::before { opacity: 1; }
 
-    /* CTA section */
-    .cta {
-      background: linear-gradient(135deg, var(--blue-1), var(--blue-3));
-      color: #fff;
-      text-align: center;
-      border-radius: 18px;
-      padding: 42px 20px;
-      box-shadow: var(--shadow);
-    }
-    .cta h2 { margin-bottom: 8px; }
-    .cta p { color: rgba(255,255,255,0.9); margin-bottom: 18px; }
+  .service-icon {
+    width: 52px; height: 52px;
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 
-    /* Floating buttons */
-    .floating-actions {
-      position: fixed;
-      right: 14px;
-      bottom: 14px;
-      display: grid;
-      gap: 10px;
-      z-index: 1100;
-    }
+  .service-card h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
 
-    .fab {
-      border-radius: 999px;
-      padding: 11px 14px;
-      color: #fff;
-      font-weight: 700;
-      box-shadow: var(--shadow);
-      font-size: 0.9rem;
-      text-align: center;
-      min-width: 132px;
-    }
+  .service-card p { font-size: 0.88rem; color: var(--muted); }
 
-    .fab.whatsapp { background: #25d366; }
-    .fab.call { background: #1d4ed8; }
+  /* WHY US */
+  .why { padding: 80px 6%; background: var(--white); }
 
-    .fab:hover { filter: brightness(0.95); }
+  .why-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
 
-    footer {
-      margin-top: 70px;
-      padding: 24px 0;
-      background: #0f1f4e;
-      color: rgba(255,255,255,0.85);
-      text-align: center;
-      font-size: 0.9rem;
-    }
+  .why-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
 
-    @media (max-width: 920px) {
-      .hero-grid, .location-grid, .map-grid { grid-template-columns: 1fr; }
-    }
+  .why-text p { color: var(--muted); margin-bottom: 28px; }
 
-    @media (max-width: 760px) {
-      .nav-links { display: none; }
-      .nav-cta { padding: 9px 13px; font-size: 0.9rem; }
-      .hero { padding-top: 70px; }
-      .floating-actions { right: 10px; bottom: 10px; }
-      .fab { min-width: 118px; font-size: 0.85rem; }
-    }
-  </style>
+  .feature {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .feature-dot {
+    width: 28px; height: 28px; min-width: 28px;
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.75rem;
+    margin-top: 3px;
+  }
+
+  .feature h4 { font-size: 0.95rem; font-weight: 600; color: var(--navy); margin-bottom: 3px; }
+  .feature p { font-size: 0.85rem; color: var(--muted); }
+
+  .why-map {
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    border-radius: 16px;
+    padding: 36px;
+    color: var(--white);
+    height: 100%;
+    min-height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .why-map h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    margin-bottom: 24px;
+    color: var(--accent);
+  }
+
+  .map-detail {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.85);
+  }
+
+  .map-detail .icon { font-size: 1.1rem; margin-top: 2px; }
+
+  /* FOOTER */
+  footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.7);
+    padding: 48px 6% 28px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 36px;
+  }
+
+  footer h4 {
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  footer ul { list-style: none; }
+  footer ul li { margin-bottom: 10px; font-size: 0.88rem; }
+  footer ul a { color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.2s; }
+  footer ul a:hover { color: var(--accent); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
+  }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.2rem; }
+    .why-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    nav ul { display: none; }
+    .hero-card { display: none; }
+  }
+</style>
 </head>
 <body>
 
-  <header class="topbar">
-    <div class="container nav">
-      <a href="#" class="brand">Star Computer Service</a>
-      <nav class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#locations">Locations</a>
-      </nav>
-      <a href="tel:+917305703932" class="nav-cta">Call Now</a>
+<!-- NAV -->
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">💻</div>
+    <div class="logo-text"><span>Star</span> Laptop<br>Repair</div>
+  </a>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="tel:+919944705561" class="nav-cta">📞 Call Now</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">⚡ Trusted Laptop Repair — Chennai</div>
+    <h1>Expert Repair.<br><span>Fast Turnaround.</span><br>Affordable Price.</h1>
+    <p>Chennai's reliable laptop repair center on OMR Road. Opposite Turyaa Hotel. We fix all brands with genuine parts and a service guarantee.</p>
+    <div class="hero-btns">
+      <a href="tel:+919944705561" class="btn-primary">📞 Call for Booking</a>
+      <a href="https://api.whatsapp.com/send?phone=919944705561&text=Hi%2C%20I%20need%20laptop%20repair%20service" class="btn-outline" target="_blank" rel="noopener">💬 WhatsApp Us</a>
     </div>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h1>Fast & Reliable Laptop and Computer Repair in Chennai</h1>
-          <p>Serving OMR & ECR with expert technicians and quick turnaround.</p>
-          <div class="hero-btns">
-            <a class="btn btn-green" href="tel:+917305703932">Call Now</a>
-            <a class="btn btn-outline" href="https://api.whatsapp.com/send?phone=919944705561&text=Hi%2C%20I%20need%20laptop%20or%20computer%20repair%20service%20in%20Chennai" target="_blank" rel="noopener">WhatsApp Now</a>
-          </div>
-        </div>
-        <aside class="hero-card">
-          <h3>Why choose Star Computer Service?</h3>
-          <ul class="hero-list">
-            <li>✔ Laptop repair Chennai with fast diagnostics</li>
-            <li>✔ Computer repair OMR by experienced technicians</li>
-            <li>✔ Laptop service ECR Chennai for all major brands</li>
-            <li>✔ Transparent pricing and reliable support</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="services">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Professional Services</h2>
-          <p>Complete sales and service support for laptops, desktops, printers, and CCTV systems.</p>
-        </div>
-
-        <div class="services-grid">
-          <article class="service-card"><div class="service-icon">💻</div><h3>Laptop & Computer Sales and Service</h3><p>Sales, upgrades, preventive maintenance, and complete repair support.</p></article>
-          <article class="service-card"><div class="service-icon">🧩</div><h3>CPU Repair</h3><p>Hardware diagnostics, motherboard checks, and performance issue fixes.</p></article>
-          <article class="service-card"><div class="service-icon">🖥️</div><h3>All-in-One Servicing</h3><p>Full servicing for all-in-one systems including display and board issues.</p></article>
-          <article class="service-card"><div class="service-icon">🛠️</div><h3>All Computer Works</h3><p>General troubleshooting, upgrades, software support, and optimization.</p></article>
-          <article class="service-card"><div class="service-icon">🖨️</div><h3>Printer Repair (All Brands)</h3><p>Inkjet and laser printer diagnosis, replacement, and maintenance.</p></article>
-          <article class="service-card"><div class="service-icon">💾</div><h3>Data Recovery (Pen Drive & Hard Disk)</h3><p>Recovery of important files from damaged or unreadable storage devices.</p></article>
-          <article class="service-card"><div class="service-icon">🔬</div><h3>Laptop Chip-Level Repair</h3><p>Advanced motherboard and IC-level troubleshooting by expert technicians.</p></article>
-          <article class="service-card"><div class="service-icon">🧰</div><h3>Broken Laptop Repair</h3><p>Physical damage, hinge, keyboard, charging, and display issue fixes.</p></article>
-          <article class="service-card"><div class="service-icon">📹</div><h3>CCTV Box Servicing</h3><p>DVR/NVR and CCTV box setup, servicing, and fault repair.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section id="gallery">
-      <div class="container">
-        <div class="section-title">
-          <h2>Service Gallery</h2>
-          <p>Recent repair and servicing work at our Chennai branches.</p>
-        </div>
-
-        <div class="gallery-wrap">
-          <button class="gallery-btn left" aria-label="Scroll left" onclick="scrollGallery(-1)">❮</button>
-          <div class="gallery-track" id="galleryTrack">
-            <div class="gallery-item"><img src="images/repair1.jpg" alt="Laptop repair work in Chennai"></div>
-            <div class="gallery-item"><img src="images/repair2.jpg" alt="Computer servicing at OMR branch"></div>
-            <div class="gallery-item"><img src="images/repair3.jpg" alt="Printer repair service Chennai"></div>
-            <div class="gallery-item"><img src="images/repair4.jpg" alt="Chip-level motherboard repair"></div>
-            <div class="gallery-item"><img src="images/repair5.jpg" alt="Data recovery support service"></div>
-          </div>
-          <button class="gallery-btn right" aria-label="Scroll right" onclick="scrollGallery(1)">❯</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <div class="section-title">
-          <h2>Customer Testimonials</h2>
-          <p>What our clients say about our laptop and computer repair service in Chennai.</p>
-        </div>
-
-        <div class="testimonial-grid">
-          <article class="testimonial-card">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p>Very quick laptop repair and clear explanation of the issue. Best service near OMR.</p>
-            <div class="testimonial-name">– Karthik R</div>
-          </article>
-          <article class="testimonial-card">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p>My desktop CPU issue was fixed same day. Professional team and fair pricing.</p>
-            <div class="testimonial-name">– Priya M</div>
-          </article>
-          <article class="testimonial-card">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <p>Excellent support for printer and data recovery. Highly recommend their ECR branch.</p>
-            <div class="testimonial-name">– Aravind S</div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Locations -->
-    <section id="locations">
-      <div class="container">
-        <div class="section-title">
-          <h2>Our Branch Locations</h2>
-          <p>Visit the nearest Star Computer Service branch in OMR or ECR, Chennai.</p>
-        </div>
-
-        <div class="location-grid">
-          <article class="location-card">
-            <h3>OMR Branch</h3>
-            <p><strong>Address:</strong> Opposite S Bank, OMR Road, Chennai</p>
-            <p><strong>Phone:</strong> <a href="tel:+917305703932">7305703932</a></p>
-          </article>
-          <article class="location-card">
-            <h3>ECR Branch</h3>
-            <p><strong>Address:</strong> Beside Promed Hospital, ECR Road, Chennai</p>
-            <p><strong>Phone:</strong> <a href="tel:+919944705561">9944705561</a></p>
-          </article>
-        </div>
-
-        <div class="map-grid">
-          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Opposite%20S%20Bank%2C%20OMR%20Road%2C%20Chennai&z=15&output=embed"
-            title="OMR Branch Map"></iframe>
-
-          <iframe class="map-frame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Beside%20Promed%20Hospital%2C%20ECR%20Road%2C%20Chennai&z=15&output=embed"
-            title="ECR Branch Map"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section>
-      <div class="container">
-        <div class="cta">
-          <h2>Need Urgent Repair Service Today?</h2>
-          <p>Call now or WhatsApp us for instant support from Star Computer Service.</p>
-          <div class="hero-btns" style="justify-content:center;">
-            <a class="btn btn-green" href="tel:+917305703932">Call OMR Branch</a>
-            <a class="btn btn-outline" href="https://api.whatsapp.com/send?phone=919944705561&text=Hi%2C%20I%20need%20urgent%20repair%20service%20in%20Chennai" target="_blank" rel="noopener">WhatsApp ECR Branch</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="floating-actions">
-    <a class="fab whatsapp" href="https://api.whatsapp.com/send?phone=919944705561&text=Hi%2C%20I%20need%20laptop%20or%20computer%20repair%20service%20in%20Chennai" target="_blank" rel="noopener">WhatsApp Now</a>
-    <a class="fab call" href="tel:+917305703932">Call Now</a>
   </div>
 
-  <footer>
-    <div class="container">
-      © 2026 Star Computer Service • Laptop repair Chennai • Computer repair OMR • Laptop service ECR Chennai
+  <div class="hero-card">
+    <h3>⭐ Why Choose Us</h3>
+    <div class="stat-row">
+      <div class="stat"><span class="num">500+</span><span class="label">Repairs Done</span></div>
+      <div class="stat"><span class="num">24hr</span><span class="label">Turnaround</span></div>
+      <div class="stat"><span class="num">All</span><span class="label">Brands Covered</span></div>
+      <div class="stat"><span class="num">100%</span><span class="label">Satisfaction</span></div>
     </div>
-  </footer>
+    <a href="tel:+919944705561" class="contact-pill">
+      <span class="icon">📞</span> +91 99944 705561
+    </a>
+    <a href="#" class="contact-pill">
+      <span class="icon">📍</span> Opp. Turyaa Hotel, OMR, Chennai
+    </a>
+  </div>
+</section>
 
-  <script>
-    function scrollGallery(direction) {
-      const track = document.getElementById('galleryTrack');
-      const amount = 320;
-      track.scrollBy({ left: direction * amount, behavior: 'smooth' });
-    }
-  </script>
-</body>
-</html>
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-header">
+    <div class="section-tag">What We Do</div>
+    <h2>Our Repair Services</h2>
+    <p>Professional repairs for all laptop brands — Dell, HP, Lenovo, Apple, Asus, Acer & more.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">🔧</div>
+      <h3>Laptop Repair</h3>
+      <p>Motherboard issues, overheating, software crashes, hardware faults — we diagnose and fix it all quickly.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🖥️</div>
+      <h3>Screen Replacement</h3>
+      <p>Cracked, flickering, or dead screens replaced with genuine panels. Same-day service available.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔋</div>
+      <h3>Battery Replacement</h3>
+      <p>Laptop not holding charge? We replace batteries for all models with warranty-backed genuine parts.</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💾</div>
+      <h3>Data Recovery</h3>
+      <p>Lost your data due to crash or accidental deletion? We recover files from failed hard drives and SSDs.</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="why-grid">
+    <div class="why-text">
+      <div class="section-tag">Why Star Laptop Repair</div>
+      <h2>Service You Can<br>Count On</h2>
+      <p>We've been serving Chennai's OMR corridor with honest, fast, and affordable laptop repairs for years.</p>
+
+      <div class="feature">
+        <div class="feature-dot">✓</div>
+        <div>
+          <h4>Free Diagnosis</h4>
+          <p>Bring your laptop in — we diagnose for free before any repair starts.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-dot">✓</div>
+        <div>
+          <h4>Genuine Parts Only</h4>
+          <p>We use OEM and certified parts so your device performs like new.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-dot">✓</div>
+        <div>
+          <h4>Service Warranty</h4>
+          <p>All repairs come with a warranty — we stand behind our work.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-dot">✓</div>
+        <div>
+          <h4>Transparent Pricing</h4>
+          <p>No hidden charges. You get a quote before we begin any work.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-map" id="contact">
+      <h3>📍 Find Us</h3>
+      <div class="map-detail">
+        <span class="icon">🏪</span>
+        <span><strong>Star Laptop Repair</strong><br>OMR Road, Chennai<br>Opposite Turyaa Hotel</span>
+      </div>
+      <div class="map-detail">
+        <span class="icon">🕐</span>
+        <span>Mon–Sat: 9:30 AM – 7:30 PM<br>Sunday: 10:00 AM – 5:00 PM</span>
+      </div>
+      <div class="map-detail">
+        <span class="icon">📞</span>
+        <span>+91 99944 705561</span>
+      </div>
+      <div class="map-detail">
+        <span class="icon">✉️</span>
+        <span><a href="/cdn-cgi/l/email-protection" class="_cf_email_" data-cfemail="dba8afbaa9b7baabafb4aba9beabbab2a99bbcb6bab2b7f5b8b4b6">[email&#160;protected]</a></span>
+      </div>
+      <br>
+      <a href="https://maps.google.com/?q=Turyaa+Hotel+OMR+Chennai" target="_blank" class="btn-primary" style="display:inline-block; text-align:center;">
+        🗺️ Get Directions
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+        <div style="width:36px;height:36px;background:var(--accent);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;">💻</div>
+        <span style="font-family:'Playfair Display',serif; color:white; font-size:1.1rem;"><span style="color:var(--accent)">Star</span> Laptop Repair</span>
+      </div>
+      <p style="font-size:0.87rem; max-width:300px;">Chennai's trusted laptop repair shop on OMR Road. Fast, affordable, and reliable service for all brands.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#">Laptop Repair</a></li>
+        <li><a href="#">Screen Replacement</a></li>
+        <li><a href="#">Battery Replacement</a></li>
+        <li><a href="#">Data Recovery</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>OMR Road, Chennai</li>
+        <li>Opp. Turyaa Hotel</li>
+        <li>+91 99944 705561</li>
+        <li>Mon–Sun: 9:30AM – 7:30PM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <spa
